@@ -1,12 +1,48 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
 .header {
     text-align: center;
-    background: #0cebeb;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+    background-size: 400% 400%; 
+    animation: gradient 7s ease infinite;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .header-main {
-    font-size: 70px;
+    background-size: 400% 400%;
+    font-size: 80px;
+    color: black;
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: gradient 7s ease infinite;
+}
+
+.header-subtext{
+    background-color: black;
     color: white;
+    font-size: 35px;
+    padding: 0.41%;
+}
+
+.story-part1{
+    color: #20e3b2;
+    padding: 2%;
+    height: 150%;
 }

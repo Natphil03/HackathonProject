@@ -11,6 +11,11 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="../scripts/parallax.js"></script>
         <script src="../scripts/echarts.js"></script>
         <script src="../scripts/createCharts.js"></script>
         <script src="../scripts/chartOption.js"></script>
@@ -18,9 +23,10 @@
     <body onload="initCharts()">
         <div class="header">
             <h1 class="header-main">NuClearer Power</h1>
+            <h2 class="header-subtext">To clearer skies</h2>
         </div>
         <center><div class="main-body">
-            <div class="story-part1">
+            <div class="story-part1" data-parallax="scroll" data-image-src="assets/The_World.png">
                 <h1>Story part 1</h1>
                 <p>
                     Imagine you are in a greenhouse, with plants all around you. 
@@ -43,7 +49,7 @@
                     A phenomenon called global warming is making this harder and harder to 
                     do every year. It's making cold places too hot and hot places even hotter!
                 </p>
-                <img src="" alt="">
+                <video src="assets/GISTEMP_Spiral_2022-03-06_2257.mp4" width="100%" height="300px" autoplay loop></video>
                 <p>
                     This is called the greenhouse affect. We are creating a thicker and thicker
                     greenhouse over the world trapping more and more heat inside.
