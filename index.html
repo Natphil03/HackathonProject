@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NuClear Power</title>
+    <!-- Include Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- Include Site Specific Styles -->
+    <link href="css/site.css" rel="stylesheet">
+	<script src="js/echarts.js"></script>
+	<script src="js/graphs.js"></script>
+	
+	<script src="js/jquery-2.2.4.js"></script>
+
+
+	<script>
+		function initCharts()
+		{
+		var myChart1 = echarts.init(document.getElementById('chart1'));
+		var myChart2 = echarts.init(document.getElementById('chart2'));
+	
+		
+		myChart1.setOption(chart1)
+		myChart2.setOption(chart2)
+
+		}
+		
+		// function change(option)
+		// {			
+		
+		// 	var myChart4 = echarts.init(document.getElementById('mainChart'));
+		
+		// 	if (myChart4 != "")
+		// 	{
+		// 		myChart4.dispose();
+		// 		myChart4 = echarts.init(document.getElementById('mainChart'));
+		// 		myChart4.setOption(window[option.id]);
+				
+				
+		// 	}
+		// }	
+	</script>
+  </head>
+  <body onload="initCharts()">
+    <!-- Fixed navbar -->
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.php">Home</a></li>
+            
+          </ul>
+        </div>/.nav-collapse 
+      </div>
+    </nav> -->
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1><center>NuClearer Power</center></h1>
+        <p></p>
+      </div>
+
+      <div class="page-header">  
+  
+	  <div class="row">
+	  <!-- our small charts will go here -->
+		<div class="col-md-12">
+      <div id="DistroChart" style="width: 100%; height: 400px">
+			  <div id="chart2" style="width: 100%; height: 800px" >
+
+
+			</div>
+		</div>
+
+		<div class="col-md-12">
+      <div id="" style="width: 100%; height: 400px"></div>
+			  <div id="chart1" style="width: 100%; min-height: 800px" >
+			</div>
+		</div>		
+		
+	  </div>
+
+	  <div class="row">
+      <div class="col-md-12">		
+        
+        <iframe src="https://ourworldindata.org/grapher/nuclear-energy-generation?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        
+       
+      
+		  </div>
+	  </div>
+
+
+	  <div	class = "row">
+		<div class="col-md-12">
+      <div id="NasaChart" style="width: 100%; height: 50px"></div>
+			<iframe	src="img\GISTEMP_Spiral_2022-03-06_2257.mp4"loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+			</div>
+	  </div>
+
+
+
+	
+	
+      <footer>
+        
+      </footer>
+    </div><!-- /.col-sm-4 -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Include Holder Generator JS -->
+    <script src="js/holder.js"></script>	
+
+	
+  </body>
+</html>
